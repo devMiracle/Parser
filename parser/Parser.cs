@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using AngleSharp;
+﻿using AngleSharp;
 using AngleSharp.Dom;
-using System.IO;
-using System.Net;
 using AngleSharp.Html.Parser;
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace parser
 {
@@ -24,8 +25,12 @@ namespace parser
 
             var parser = new HtmlParser();
             var document = parser.ParseDocument(resp.GetResponseStream());
-            Console.WriteLine(document.DocumentElement.OuterHtml);
+            //Console.WriteLine(document.DocumentElement.OuterHtml);
 
+            //"h3:has(> span#Распространение_по_странам_и_территориям) + table > tbody"
+            IElement tableElement = document.QuerySelector("div #data_container");
+
+            Console.WriteLine(tableElement.QuerySelector("tbody").InnerHtml);
 
 
 
