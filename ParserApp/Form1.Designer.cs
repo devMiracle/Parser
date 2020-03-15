@@ -40,20 +40,22 @@
             this.buttonParse.TabIndex = 0;
             this.buttonParse.Text = "parse";
             this.buttonParse.UseVisualStyleBackColor = true;
+            this.buttonParse.Click += new System.EventHandler(this.buttonParse_Click);
             // 
             // listBoxParse
             // 
             this.listBoxParse.FormattingEnabled = true;
             this.listBoxParse.Location = new System.Drawing.Point(12, 41);
             this.listBoxParse.Name = "listBoxParse";
-            this.listBoxParse.Size = new System.Drawing.Size(303, 342);
+            this.listBoxParse.Size = new System.Drawing.Size(303, 95);
             this.listBoxParse.TabIndex = 1;
+            this.listBoxParse.SelectedIndexChanged += new System.EventHandler(this.listBoxParse_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 398);
+            this.ClientSize = new System.Drawing.Size(327, 152);
             this.Controls.Add(this.listBoxParse);
             this.Controls.Add(this.buttonParse);
             this.Name = "Form1";
