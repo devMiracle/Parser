@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserApp", "ParserApp\ParserApp.csproj", "{FE6261E5-DCAA-4052-BA7A-5F0777AA67FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parser", "parser\parser.csproj", "{C059B920-DA95-44E2-8555-6C5073BC4771}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FE6261E5-DCAA-4052-BA7A-5F0777AA67FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE6261E5-DCAA-4052-BA7A-5F0777AA67FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE6261E5-DCAA-4052-BA7A-5F0777AA67FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C059B920-DA95-44E2-8555-6C5073BC4771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C059B920-DA95-44E2-8555-6C5073BC4771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C059B920-DA95-44E2-8555-6C5073BC4771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C059B920-DA95-44E2-8555-6C5073BC4771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

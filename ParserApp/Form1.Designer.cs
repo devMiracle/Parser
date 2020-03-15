@@ -28,13 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonParse = new System.Windows.Forms.Button();
+            this.listBoxParse = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // buttonParse
+            // 
+            this.buttonParse.Location = new System.Drawing.Point(12, 12);
+            this.buttonParse.Name = "buttonParse";
+            this.buttonParse.Size = new System.Drawing.Size(303, 23);
+            this.buttonParse.TabIndex = 0;
+            this.buttonParse.Text = "parse";
+            this.buttonParse.UseVisualStyleBackColor = true;
+            // 
+            // listBoxParse
+            // 
+            this.listBoxParse.FormattingEnabled = true;
+            this.listBoxParse.Location = new System.Drawing.Point(12, 41);
+            this.listBoxParse.Name = "listBoxParse";
+            this.listBoxParse.Size = new System.Drawing.Size(303, 342);
+            this.listBoxParse.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(327, 398);
+            this.Controls.Add(this.listBoxParse);
+            this.Controls.Add(this.buttonParse);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonParse;
+        private System.Windows.Forms.ListBox listBoxParse;
     }
 }
 

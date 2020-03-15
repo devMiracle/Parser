@@ -16,5 +16,10 @@ namespace ParserApp
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Text = "www.1.com";
+        }
     }
 }
