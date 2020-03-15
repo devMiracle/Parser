@@ -22,7 +22,9 @@ namespace ParserApp
 
             var parser = new HtmlParser();
             var document = parser.ParseDocument(resp.GetResponseStream());
-            IElement tableElement = document.QuerySelector(".data_container > table > tbody > tr > td > .value > span");
+            IElement tableElement = document.QuerySelector(".data_container > table > tbody > tr > td > .value > span"); //выборка значения из таблицы
+                                    //document.QuerySelector(".data_container:contains(\"ПриватБанк\") > *"); //выборка по указанной строке
+                                    //document.QuerySelector(".data_container:contains(\"График флуктуаций курса в ПриватБанк\") + span > span");  //выборка по указанной строке следующего элемента
             Console.WriteLine(tableElement.InnerHtml);
             //int count = 0;
             //int totalInfected = 0;
